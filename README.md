@@ -1,6 +1,8 @@
 ## Common Problems in Web Dev
 - Case 01 : Center Position
 - Case 02 : Vertical/Horizontal List Items
+- Case 03 : Flexbox vs Grid
+- Case 04 : Expandable Content
 
 ## Supports
 Love this repository? You can support me via Karya Karsa (https://karyakarsa.com/develobe)

@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Case 04 : Expandable Content (Final)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Expandable main-ad animation
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: '#main-ad-wrapper',
+            scrub: true,
+            pin: true,
+            start: '50% 50%',
+          }
+        })
+        .from('#expandable-content', {
+          width: 80,
+          ease: 'none',
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Full Screen Wrapper -->
+    <div id="main-ad-wrapper" class="w-full h-screen bg-gray-200 flex flex-col items-center justify-center">
+      
+      <!-- Expandable Content -->
+      <div id='expandable-content' class="w-full h-[450px] min-h-[450px] overflow-hidden">
+        <img src="https://sgp1.vultrobjects.com/public-develobe/galeri-indonesia/1713592262725.webp" 
+          class="w-full h-[450px] min-h-[450px] object-cover" />
+      </div>
+      <!-- ./Expandable Content -->
+
+    </div>
+    <!-- ./Full Screen Wrapper -->
+
+    <!-- Another Section -->
+    <div class="mt-10">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam, sit possimus minus tenetur, mollitia illo sed cum maxime pariatur architecto quod animi excepturi? Animi harum accusantium quis sunt maiores?
+    </div>
+    <!-- ./Another Section -->
+  </body>
+</html>
