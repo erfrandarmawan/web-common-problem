@@ -4,6 +4,7 @@
 - Case 03 : Flexbox vs Grid
 - Case 04 : Expandable Content
 - Case 05 : Percentage Width
+- Case 06 : Fixed Position
 
 ## Supports
 Love this repository? You can support me via Karya Karsa (https://karyakarsa.com/develobe)
